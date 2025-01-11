@@ -114,6 +114,11 @@ func UpdateMovie(c *gin.Context) {
 		return
 	}
 
+	if err := validator.ValidateMovie(&movie); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"errors": err.Error()})
+		return
+	}
+
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 

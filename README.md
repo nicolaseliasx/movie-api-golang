@@ -33,8 +33,8 @@ Essa é uma API REST para gerenciamento de filmes desenvolvida com **Golang**, c
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/nicolaseliasx/movie-apirest-golang.git
+   cd movie-apirest-golang
    ```
 
 2. **Suba os containers com Docker Compose**:

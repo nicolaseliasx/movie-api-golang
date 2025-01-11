@@ -76,7 +76,7 @@ func isYearValid(year int) error {
 }
 
 func ValidateGenre(genre string) error {
-	if !models.validGenres[genre] {
+	if !models.ValidGenres[genre] {
 		return errors.New("invalid genre: " + genre)
 	}
 	return nil

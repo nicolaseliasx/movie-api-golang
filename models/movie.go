@@ -11,7 +11,7 @@ type Movie struct {
     Rating   string             `bson:"rating" json:"rating"`       // Avaliação do filme
 }
 
-var validGenres = map[string]bool{
+var ValidGenres = map[string]bool{
 	"Action":                 true,
 	"Adventure":              true,
 	"Animation":              true,
